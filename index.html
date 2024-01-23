@@ -1,0 +1,498 @@
+<html>
+  <title>Ki Web Apps</title>
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/w3.css" />
+  <style>
+    .body-style {
+      background-color: rgb(255, 254, 254);
+    }
+    .banner-style {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+    .navbar-style {
+      display: flex;
+      padding: 20px;
+      background-color: #ffaaee;
+      font-weight: 600;
+      justify-content: center;
+    }
+    .title-style {
+      font-weight: 200;
+      margin: 10px;
+    }
+    .grid-image {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+    .hover-image {
+      width: 500px;
+      height: 300px;
+    }
+    .image-style {
+      width: 500px;
+      height: 300px;
+    }
+    .button-custom {
+      border-radius: 5px;
+      background-color: #ffaaee;
+    }
+    .footer-style {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #ffaaee;
+    }
+    .image-profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .padding-left {
+      padding-left: 20px;
+    }
+    .padding {
+      padding: 20px;
+    }
+    .row {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+    }
+    .text-profile {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .text-role {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .size-instagram {
+      height: 75px;
+      width: 75px;
+      object-fit: contain;
+    }
+    .size-linkedin {
+      height: 75px;
+      width: 75px;
+      object-fit: contain;
+    }
+    .padding-social-media {
+      padding-top: 20px;
+      padding-left: 20%;
+    }
+    .padding-icon {
+      padding-left: 20px;
+    }
+    .text-nim {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .text-kelas {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .padding-nim {
+      padding-top: 20px;
+      padding-left: 250px;
+    }
+    .align-quotes {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-quotes {
+      color: #ffaaee;
+      -webkit-text-stroke: black;
+      -webkit-text-stroke-width: 0.2px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  </style>
+  <body class="body-style">
+    <div class="w3-container">
+      <img class="banner-style" src="css/banner.jpeg" alt="" />
+    </div>
+
+    <div class="w3-bar w3-center navbar-style">
+      <button class="w3-bar-item w3-button" onclick="openMateri('EnjoyApp')">
+        Enjoy Apps
+      </button>
+      <button class="w3-bar-item w3-button" onclick="openMateri('FunApp')">
+        Fun Apps
+      </button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-bar-block">Favorite Techstack</button>
+        <div
+          class="w3-dropdown-content w3-bar-block"
+          style="background-color: rgb(226, 215, 215)"
+        >
+          <button class="w3-button" onclick="openMateri('Flutter')">
+            <img
+              src="css/flutter.jpeg"
+              alt=""
+              style="width: 125px; height: 100px; object-fit: contain"
+              onclick="openMateri('Flutter')"
+            />
+          </button>
+          <br>
+          <button class="w3-button" onclick="openMateri('Mongodb')">
+            <img
+              src="css/mongodb.webp"
+              alt=""
+              style="width: 125px; height: 100px; object-fit: contain"
+              onclick="openMateri('Flutter')"
+            />
+          </button>
+          <br>
+
+          <button class="w3-button" onclick="openMateri('Kotlin')">
+            <img
+              src="css/kotlin.png"
+              alt=""
+              style="width: 125px; height: 100px; object-fit: contain"
+              onclick="openMateri('Flutter')"
+            />
+          </button>
+          <br>
+
+          <button class="w3-button" onclick="openMateri('Php')">
+            <img
+              src="css/php.png"
+              alt=""
+              style="width: 125px; height: 100px; object-fit: contain"
+              onclick="openMateri('Flutter')"
+            />
+          </button>
+         
+
+          
+        </div>
+      </div>
+      <button class="w3-bar-item w3-button" onclick="openMateri('Profile')">
+        About Me
+      </button>
+    </div>
+
+    <div
+      id="EnjoyApp"
+      class="w3-container materi w3-animate-zoom"
+      style="display: none"
+    >
+      <br />
+      <h1 class="title-style">My Enjoy Applications</h1>
+      <br />
+      <div class="grid-image">
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="kistore_app.html"
+            ><img src="css/5.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Kistore App</button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="kamisaiyo_app.html"
+            ><img src="css/2.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Kami Saiyo App</button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="sign_language_app.html"
+            ><img src="css/3.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">
+                Sign Language Recognition App
+              </button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="smiling_weather_app.html"
+            ><img src="css/4.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">
+                Smiling Weather App
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      id="FunApp"
+      class="w3-container materi w3-animate-zoom"
+      style="display: none"
+    >
+      <br />
+      <h1 class="title-style">My Fun Applications</h1>
+      <br />
+      <div class="grid-image">
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="dismee_app.html"
+            ><img src="css/9.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Dismee App</button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="finance_bomb_app.html"
+            ><img src="css/6.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Finance Bomb App</button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="ask_app.html"
+            ><img src="css/1.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Ask App</button>
+            </div>
+          </a>
+        </div>
+        <div class="w3-display-container w3-hover-opacity hover-image">
+          <a href="scroll_app.html"
+            ><img src="css/8.png" alt="" class="image-style" />
+            <div class="w3-display-middle w3-display-hover w3-xlarge">
+              <button class="w3-button button-custom">Scroll App</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      id="Flutter"
+      class="w3-container materi w3-animate-zoom padding"
+      style="display: none"
+    >
+      <img
+        src="css/flutter.jpeg"
+        alt=""
+        style="
+          width: 100%;
+          height: 350px;
+          object-fit: contain;
+          padding-bottom: 20px;
+        "
+      />
+      <p style="font-size: 20px; font-weight: bold; padding-bottom: 10px">
+        Favorite Techstack saya yang pertama adalah Flutter Framework. Nah bagi
+        kalian yang belum tau mengenai Flutter Framework ini, mari sama sama
+        kita memahami apa itu Flutter.
+      </p>
+      <p style="font-size: 20px">
+        Flutter adalah platform yang digunakan para developer untuk membuat
+        aplikasi multiplatform hanya dengan satu basis coding (codebase).
+        Artinya, aplikasi yang dihasilkan dapat dipakai di berbagai platform,
+        baik mobile Android, iOS, web, maupun desktop.
+      </p>
+      <p style="font-size: 20px">
+        Flutter memiliki dua komponen penting, yaitu, Software Development Kit
+        (SDK) dan juga framework user interface.
+      </p>
+      <ul style="font-size: 20px">
+        <li>
+          Software Development Kit (SDK) merupakan sekumpulan tools yang
+          berfungsi untuk membuat aplikasi supaya bisa dijalankan di berbagai
+          platform.
+        </li>
+        <li>
+          Framework UI merupakan komponen UI, seperti teks, tombol, navigasi,
+          dan lainnya, yang dapat Anda kustomisasi sesuai kebutuhan.
+        </li>
+      </ul>
+      <p style="font-size: 20px; padding-top: 20px">
+        Flutter juga merupakan platform yang gratis dan open source. Jika Anda
+        ingin menggunakan Flutter, Anda perlu mempelajari bahasa pemrograman
+        Dart. Berbeda dengan framework front-end pada umumnya, di mana
+        JavaScript adalah bahasa pemrogramannya.
+      </p>
+    </div>
+    <div
+      id="Mongodb"
+      class="w3-container materi w3-animate-zoom padding"
+      style="display: none"
+    >
+      <img
+        src="css/mongodb.webp"
+        alt=""
+        style="
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+          padding-bottom: 20px;
+        "
+      />
+      <p style="font-size: 20px; font-weight: bold; padding-bottom: 10px">
+        Favorite Techstack saya yang kedua adalah MongoDB. Nah bagi kalian yang
+        belum tau mengenai MongoDB ini, mari sama sama kita memahami apa itu
+        MongoDB.
+      </p>
+      <p style="font-size: 20px">
+        MongoDB adalah sistem database yang populer di kalangan pengembang
+        perangkat lunak. MongoDB dirancang menggunakan pendekatan NoSQL (Not
+        Only SQL), di mana NoSQL adalah sistem pengelolaan database yang
+        fleksibel dan tidak membutuhkan perintah atau query yang rumit.
+      </p>
+      <p style="font-size: 20px">
+        Dengan menggunakan MongoDB, Anda dapat mengoptimalkan pengelolaan data
+        di dalam database, sehingga kinerja sistem secara keseluruhan jadi lebih
+        meningkat.
+      </p>
+
+      <p style="font-size: 20px; padding-top: 20px">
+        Tidak hanya itu, database MongoDB juga menyediakan beragam fitur yang
+        mendukung pengembangan website dan aplikasi. Misalnya, integrasi dengan
+        berbagai bahasa pemrograman populer, kemampuan mengelola query yang
+        kuat, serta pencarian dan pemrosesan data yang efisien.
+      </p>
+    </div>
+    <div
+      id="Kotlin"
+      class="w3-container materi w3-animate-zoom padding"
+      style="display: none"
+    >
+      <img
+        src="css/kotlin.png"
+        alt=""
+        style="
+          width: 100%;
+          height: 250px;
+          object-fit: contain;
+          padding-bottom: 20px;
+        "
+      />
+      <p style="font-size: 20px; font-weight: bold; padding-bottom: 10px">
+        Favorite Techstack saya yang ketiga adalah Kotlin. Nah bagi kalian yang
+        belum tau mengenai Kotlin ini, mari sama sama kita memahami apa itu
+        Kotlin.
+      </p>
+      <p style="font-size: 20px">
+        Kotlin adalah bahasa pemrograman yang dikembangkan oleh JetBrains dan
+        sebenarnya dapat Anda gunakan untuk beragam platform. Namun, saat ini
+        lebih banyak orang menggunakannya untuk mengembangkan aplikasi Android.
+        Anda dapat menggunakan dan kembangkan secara gratis karena sifatnya yang
+        open-source.
+      </p>
+      <p style="font-size: 20px">
+        Kotlin dikembangkan pada tahun 2011 oleh JeBrains yang dikepalai oleh
+        Dimitry Jemerov. Ia ingin menciptakan bahasa pemrograman yang sederhana
+        dan lebih ringkas dibandingkan bahasa pemrograman lain yang banyak
+        digunakan saat itu.
+      </p>
+
+      <p style="font-size: 20px; padding-top: 20px">
+        Bahasa pemrograman modern yang satu ini dapat berjalan secara statis
+        pada Java Virtual Machine (JVM). Kotlin sering disebut-sebut sebagai
+        saingan Java dalam membuat aplikasi Android. Namun, bahasa pemrograman
+        Kotlin juga dapat Anda gunakan bersamaan dengan Java untuk membuat
+        aplikasi. Kedua bahasa pemrograman ini menghasilkan output yang sama,
+        sehingga tidak akan bentrok jika digunakan berbarengan.
+      </p>
+    </div>
+    <div
+      id="Php"
+      class="w3-container materi w3-animate-zoom padding"
+      style="display: none"
+    >
+      <img
+        src="css/php.png"
+        alt=""
+        style="
+          width: 100%;
+          height: 250px;
+          object-fit: contain;
+          padding-bottom: 20px;
+        "
+      />
+      <p style="font-size: 20px; font-weight: bold; padding-bottom: 10px">
+        Favorite Techstack saya yang keempat adalah PHP. Nah bagi kalian yang
+        belum tau mengenai PHP ini, mari sama sama kita memahami apa itu PHP.
+      </p>
+      <p style="font-size: 20px">
+        PHP Adalah bahasa scripting server-side, Bahasa pemrograman yang
+        digunakan untuk mengembangkan situs web statis atau situs web dinamis
+        atau aplikasi Web. PHP singkatan dari Hypertext Pre-processor, yang
+        sebelumnya disebut Personal Home Pages.
+      </p>
+      <p style="font-size: 20px">
+        Karena php merupakan scripting server-side maka jenis bahasa pemrograman
+        ini nantinya script/program tersebut akan dijalankan/diproses oleh
+        server. Berbeda dengan javascript yang client-side.
+      </p>
+
+      <p style="font-size: 20px; padding-top: 20px">
+        Fungsi PHP adalah membuat atau mengembangkan situs web statis atau situs
+        web dinamis atau aplikasi Web. Walaupun sebenarnya bukan hanya PHP
+        bahasa pemrograman yang bisa digunakan untuk memuat website.
+      </p>
+    </div>
+
+    <div
+      id="Profile"
+      class="w3-container materi w3-animate-zoom padding"
+      style="display: none"
+    >
+      <div class="row">
+        <img class="image-profile" src="css/me.jpeg" alt="" />
+        <div class="padding-left">
+          <p class="text-profile">Ahmad Riski</p>
+          <p class="text-role">Sofware Engineer</p>
+        </div>
+        <div class="padding-nim">
+          <p class="text-nim">NIM: 10123449</p>
+          <p class="text-kelas">Kelas: IF-11</p>
+        </div>
+        <div class="padding-social-media">
+          <a href="http://instagram.com/amdrski"
+            ><img
+              class="size-instagram padding-icon"
+              src="css/instagram.png"
+              alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/ahmad-riski">
+            <img
+              class="size-linkedin padding-icon"
+              src="css/linkedin.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="align-quotes">
+        <p class="text-quotes">
+          "Jika anda akan melakukan sesuatu yang baru atau inovatif, Anda harus
+          siap menerima kesalahpahaman"
+        </p>
+      </div>
+      <p>- Jeff Bezos</p>
+    </div>
+    <script>
+      function openMateri(namaMateri) {
+        var i;
+        var x = document.getElementsByClassName("materi");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(namaMateri).style.display = "block";
+      }
+      openMateri("EnjoyApp");
+    </script>
+  </body>
+  <footer>
+    <div class="footer-style">
+      <a href="http://stariskiii.web.app">
+        <p>Copyright 2024. Ahmad Riski</p>
+      </a>
+    </div>
+  </footer>
+</html>
